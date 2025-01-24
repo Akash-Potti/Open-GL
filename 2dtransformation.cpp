@@ -6,7 +6,7 @@ char T;
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-
+    glLoadIdentity();
     glColor3f(0, 0, 0);
     glBegin(GL_LINES);
     glVertex2f(-500, 0);
@@ -31,7 +31,7 @@ void display()
         printf("\nRotation");
         glLoadIdentity();
         glColor3f(0, 1, 0);
-        glRotatef(45, 0, 0, 1);
+        glRotatef(45, 0, 0, 0);
         glRecti(0, 0, 100, 150);
     }
     if (T == 's')
